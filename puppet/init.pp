@@ -1,3 +1,1 @@
-class { 'hdp':
-	#dhparam => 1024,
-}
+class { 'hdp': }
