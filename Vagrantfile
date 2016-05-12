@@ -51,10 +51,7 @@ Vagrant.configure(2) do |config|
 	# end
 
 	config.vm.provision "shell", inline: <<-SHELL
-		#apt-get update --fix-missing
-		#apt-get -y --force-yes upgrade
-		#rm -Rf /var/log/*
-		#cd /vagrant/puppet && librarian-puppet install # --clean --verbose
+		cd /vagrant/puppet && librarian-puppet install # --clean --verbose
 	SHELL
 
 	config.vm.provision "puppet" do |puppet|
