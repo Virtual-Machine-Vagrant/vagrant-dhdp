@@ -23,6 +23,9 @@ mod 'puppet-locales',
 mod 'puppet-timezone',
 	:git => "git://github.com/loispuig/puppet-timezone.git"
 
+mod 'puppet-hdp',
+	:git => "git://github.com/loispuig/puppet-hdp.git"
+
 mod 'puppet-dotdeb',
 	:git => "git://github.com/loispuig/puppet-dotdeb.git"
 
