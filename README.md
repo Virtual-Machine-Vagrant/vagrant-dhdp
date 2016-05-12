@@ -13,7 +13,7 @@
 Setup a web development environment using vagrant :
 
 * OS : [Debian 8](https://atlas.hashicorp.com/loispuig/boxes/debian-jessie-amd64)
-* Software : Apache2, MariaDB, PHP7, phpMyAdmin
+* Software : Apache2, MariaDB, PHP7, phpMyAdmin, Redis, git, composer
 
 ## Required dependencies
 
