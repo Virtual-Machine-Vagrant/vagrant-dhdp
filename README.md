@@ -27,14 +27,14 @@ Clone or download this repository
 ```
 git clone https://github.com/loispuig/vagrant-dhdp.git
 ```
-Edit Vagrantfile to fit your needs, then launch the boxe:
+Edit Vagrantfile to fit your needs, then launch the box:
 ```
 vagrant up
 ```
 
 Once up: 
 * Your files are stored in the 'www' directory.
-* Open a web browser and navigate to http://localhost:8080 or https://localhost:8443
+* Open a web browser and navigate to http://10.10.10.10 or https://10.10.10.10
 * phpMyAdmin can be found at the /phpmyadmin adress
 
 ## Reference
