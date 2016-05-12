@@ -34,3 +34,6 @@ mod 'puppet-php7',
 
 mod 'puppet-phpmyadmin',
 	:git => "git://github.com/loispuig/puppet-phpmyadmin.git"
+
+mod 'puppet-pagespeed',
+	:git => "git://github.com/loispuig/puppet-pagespeed.git"
