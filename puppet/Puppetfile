@@ -3,7 +3,6 @@ forge "https://forgeapi.puppetlabs.com"
 mod 'puppetlabs/stdlib'
 mod 'puppetlabs/apt'
 mod 'puppetlabs/ntp'
-mod 'puppetlabs/mysql', "3.6.2"
 mod 'puppetlabs/git'
 mod 'puppetlabs/vcsrepo'
 mod 'puppetlabs/inifile'
@@ -13,6 +12,9 @@ mod 'nanliu/staging'
 mod 'stahnma/epel'
 mod 'arioch/redis'
 mod 'camptocamp/openssl'
+
+mod 'puppetlabs/mysql', '3.6.2',
+	:git => "https://github.com/puppetlabs/puppetlabs-mysql.git"
 
 mod 'puppet-hostname',
 	:git => "git://github.com/loispuig/puppet-hostname.git"
