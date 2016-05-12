@@ -1,41 +1,4 @@
 forge "https://forgeapi.puppetlabs.com"
 
-mod 'puppetlabs/stdlib'
-mod 'puppetlabs/apt'
-mod 'puppetlabs/ntp'
-mod 'puppetlabs/git'
-mod 'puppetlabs/vcsrepo'
-mod 'puppetlabs/inifile'
-mod 'puppetlabs/apache'
-mod 'puppetlabs/concat'
-mod 'nanliu/staging'
-mod 'stahnma/epel'
-mod 'arioch/redis'
-mod 'camptocamp/openssl'
-
-mod 'puppetlabs/mysql', '3.6.2',
-	:git => "https://github.com/puppetlabs/puppetlabs-mysql.git"
-
-mod 'puppet-hostname',
-	:git => "git://github.com/loispuig/puppet-hostname.git"
-
-mod 'puppet-locales',
-	:git => "git://github.com/loispuig/puppet-locales.git"
-
-mod 'puppet-timezone',
-	:git => "git://github.com/loispuig/puppet-timezone.git"
-
 mod 'puppet-hdp',
-	:git => "git://github.com/loispuig/puppet-hdp.git"
-
-mod 'puppet-dotdeb',
-	:git => "git://github.com/loispuig/puppet-dotdeb.git"
-
-mod 'puppet-php7',
-	:git => "git://github.com/loispuig/puppet-php7.git"
-
-mod 'puppet-phpmyadmin',
-	:git => "git://github.com/loispuig/puppet-phpmyadmin.git"
-
-mod 'puppet-pagespeed',
-	:git => "git://github.com/loispuig/puppet-pagespeed.git"
+	:git => "https://github.com/loispuig/puppet-hdp.git"
