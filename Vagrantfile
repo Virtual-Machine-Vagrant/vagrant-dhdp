@@ -58,9 +58,9 @@ Vagrant.configure(2) do |config|
 		puppet.manifests_path = "puppet"
 		puppet.manifest_file = "init.pp"
 		puppet.module_path = "puppet/modules"
-		puppet.options = "--debug --verbose"
-		puppet.facter = {
-			"vagrant" => "1",
-		}
+		#puppet.options = "--debug --verbose"
+		#puppet.facter = {
+		#	"vagrant" => "1",
+		#}
 	end
 end
