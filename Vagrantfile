@@ -29,7 +29,7 @@ Vagrant.configure(2) do |config|
 	config.vm.synced_folder "www/",          "/var/www",          create: true, owner: 'www-data', group: 'vagrant', mount_options: ["dmode=775,fmode=664"]
 
 	config.vm.provider "virtualbox" do |vb|
-		#vb.name = "dhdp"
+		vb.name = "vagrant-dhdp"
 		vb.gui = false
 		vb.memory = 1024
 		vb.cpus = 1
@@ -40,6 +40,7 @@ Vagrant.configure(2) do |config|
 
 	config.vm.provision "shell", inline: <<-SHELL
 		cd /vagrant/puppet
+		rm -Rf log/mysql/* log/php/* log/apache2/* log/redis/*
 		rm -Rf .tmp .librarian Puppetfile.lock
 		librarian-puppet install --verbose --clean
 	SHELL
