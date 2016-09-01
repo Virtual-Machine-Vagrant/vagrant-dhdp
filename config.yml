@@ -1,0 +1,8 @@
+configs:
+    hostname: 'damp'
+    domain: 'vagrant'
+    aliases: 'damp.kctus.fr fr.web-widget.dev'
+    letsencrypt:
+        install: true      
+        domains: 'damp.kctus.fr'
+        email: 'admin@kctus.fr'

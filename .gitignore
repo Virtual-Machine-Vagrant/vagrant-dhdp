@@ -2,3 +2,5 @@
 .vagrant
 mysql-backups
 log
+www/*
+letsencrypt
