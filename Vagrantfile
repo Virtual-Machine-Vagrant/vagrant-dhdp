@@ -69,7 +69,7 @@ Vagrant.configure(2) do |config|
 	config.vm.provision "shell", inline: <<-SHELL
 		cd /vagrant/puppet
 		rm -Rf log/mysql/* log/php/* log/apache2/* log/redis/*
-		LIBRARIANRESET=0
+		LIBRARIANRESET=1
 		if [ ! -d .librarian -o ${LIBRARIANRESET} -eq 1 ] ; then
 			rm -Rf .tmp .librarian Puppetfile.lock
 			librarian-puppet install --clean --verbose
@@ -83,7 +83,9 @@ Vagrant.configure(2) do |config|
 		puppet.manifests_path = "puppet"
 		puppet.manifest_file = "init.pp"
 		puppet.module_path = "puppet/modules"
-		puppet.options = "--debug --verbose --no-stringify_facts --trusted_node_data"
+		puppet.environment_path = "environments"
+    	puppet.environment = "puppet"
+		puppet.options = "--verbose --debug" #--no-stringify_facts --trusted_node_data
 		puppet.facter = {
 			"custom_config" => custom_config
         }

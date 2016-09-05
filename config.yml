@@ -1,8 +1,8 @@
 configs:
-    hostname: 'damp'
+    hostname: 'dhdp'
     domain: 'vagrant'
-    aliases: 'damp.kctus.fr fr.web-widget.dev'
+    aliases: 'dhdp.kctus.fr'
     letsencrypt:
-        install: true      
-        domains: 'damp.kctus.fr'
+        install: false      
+        domains: 'dhdp.kctus.fr'
         email: 'admin@kctus.fr'

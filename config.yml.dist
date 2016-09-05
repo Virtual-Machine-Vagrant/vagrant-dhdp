@@ -1,0 +1,8 @@
+configs:
+    hostname: 'myhostname'
+    domain: 'vagrant'
+    aliases: 'myhostname.mydomain.com'
+    letsencrypt:
+        install: false # Your VM must be accessible to internet. Be sure to set NAT rules on your router. See 'config.vm.network' setting in VagrantFile to find the ports.    
+        domains: 'myhostname.mydomain.com'
+        email: 'admin@mydomain.com'
